@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./src/css/contact.css" />
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="contact">
+      <div class="form-container">
+        <form
+          action="https://formsubmit.co/b9c4840700692507fcb6b12383e9ac4b"
+          method="POST"
+        >
+          <h3 id="title">Get in touch</h3>
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Your email address"
+            required
+          />
+          <input
+            type="tel"
+            name="Phone"
+            id="tel"
+            placeholder="Your mobile number"
+            required
+          />
+          <textarea
+            name="Message"
+            id="message"
+            rows="4"
+            placeholder="Please, leave a message"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-wrapper">
+        <div class="brand">
+          <span id="brand-name"><a href="./index.html">Nicholas</a></span>
+        </div>
+
+        <div class="social-media-wrapper">
+          <a href="https://github.com/Nicholas-Darko-Brown" target="_blank">
+            <img src="./assets/github.png" alt="github" />
+          </a>
+          <a
+            href="http://linkedin.com/in/nicholas-brown-a6a632193"
+            target="_blank"
+          >
+            <img src="./assets/linkedin.png" alt="linkedin" />
+          </a>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span class="copyright-text">Copyright</span>
+            <span id="currentYear"></span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const myYear = document.getElementById("currentYear");
+      const mydate = new Date();
+      myYear.textContent = mydate.getFullYear();
+    </script>
+  </body>
+</html>
