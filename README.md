@@ -1,3 +1,3 @@
 # Personal Portfolio
 
-[Live Preview]('https://nicholasbrown.netlify.app')
+[Live Preview](https://nicholasbrown.netlify.app)
