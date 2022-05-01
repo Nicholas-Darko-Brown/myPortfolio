@@ -125,6 +125,26 @@ header nav ul li a:hover:after {
   margin-top: 1rem;
 }
 
+.social-media-wrapper img {
+  animation: spin 3s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.social-media-wrapper img:hover,
+.skill-box:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
 /* About */
 #about {
   width: min(80%, 60rem);
@@ -136,7 +156,8 @@ h3 {
 }
 
 .about-me {
-  line-height: 2;
+  line-height: 2.25;
+  column-count: 2;
 }
 
 .resume-btn {
@@ -281,6 +302,9 @@ h5 {
 }
 
 @media (max-width: 650px) {
+  .about-me {
+    column-count:inherit;
+  }
   .footer-wrapper {
     flex-direction: column;
     gap: 1.3rem;
